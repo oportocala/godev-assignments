@@ -2,3 +2,13 @@
     font-family: sans-serif;
 }
 
+.add-btn {
+    display: none;
+}
+
+#the-table tr:last-child .add-btn {
+    display: inline;
+}
+input[disabled] {
+    text-decoration: line-through;
+}

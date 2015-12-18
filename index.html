@@ -7,29 +7,33 @@
 </head>
 <body>
 
-    <div>
-        <a href="#">Add new row</a>
-    </div>
+<script type="text/html" id="tpl">
 
+    <td><input/></td>
+    <td><input type="email"/></td>
+    <td>
+        <a href="#" class="add-btn">Add new row</a>
+    </td>
 
-    <table>
-        <thead>
-        <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Actions</th>
-        </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><input/></td>
-                <td><input type="email"/></td>
-                <td>
-                    ...
-                </td>
-            </tr>
-        </tbody>
-    </table>
+</script>
+
+<table id="the-table">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody><tr>
+        <td><input/></td>
+        <td><input type="email"/></td>
+        <td>
+            <a href="#" class="add-btn">Add new row</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
 
 <script src="js/template-engine.js"></script>
 <script src="js/main.js"></script>
