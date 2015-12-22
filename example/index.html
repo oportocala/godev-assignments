@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Example 1</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body>
+
+<script type="text/html" id="template">
+    <td><%=city%></td>
+    <td><a href="#" class="remove-btn">Remove</a></td>
+</script>
+
+<form id="form">
+    <input name="city" id="city"/>
+    <input type="submit" value="Submit!"/>
+    <span id="loading" style="display:none">Loading ...</span>
+</form>
+
+<table id="table">
+    <thead>
+    <tr>
+        <th>City</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+
+    <tbody></tbody>
+
+    <tfoot>
+    <tr>
+        <td>Total: <span id="count">0</span>
+        </td>
+    </tr>
+    </tfoot>
+</table>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6Pr-4VV_17cwh4zYZzPIcC7E0CadPg5I&signed_in=true"></script>
+<script src="js/template-engine.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
