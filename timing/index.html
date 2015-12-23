@@ -16,10 +16,10 @@
     <span id="count-down"></span>
     <script>
         var cd = document.getElementById("count-down");
-        var timeOfExplosion = new Date("Tue Dec 22 2015 17:00:15 GMT+0200 (EET)");
+        var timeOfExplosion = new Date("Tue Dec 23 2015 12:45:00 GMT+0200 (EET)");
         console.log(new Date(), timeOfExplosion);
         var timeToExplosion = Math.ceil((timeOfExplosion - new Date()) / 1000);
-        console.log(timeToExplosion);
+        var interval;
 
         var i = 0;
         var myFunction = function () {
@@ -30,12 +30,13 @@
                 document.body.style.color = 'white';
                 var audio = new Audio('http://www.sadtrombone.com/assets/sound/trombone.ogg');
                 audio.play();
+                clearInterval(interval);
             } else {
                 i += .010;
             }
         };
 
-        setInterval(myFunction, 10);
+        interval = setInterval(myFunction, 10);
     </script>
 </body>
 </html>
